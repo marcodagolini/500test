@@ -144,8 +144,8 @@
   <script>
   
   window.onload = function() {
-	
-    lpTag.newPage(CurrentLocation, {section: "fiat"});
+	  var CurrentLocation = window.location.href;
+	  lpTag.newPage(CurrentLocation, {section: "fiat"});
 		lpTag.sdes.push({
 			"type": "ctmrinfo",
 			"info": {
